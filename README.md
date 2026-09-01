@@ -1,49 +1,45 @@
-# 🌍 Balsamick - Galeria de Viagens e Paisagens
+# WALLPAPER_ZONE — Galeria de Wallpapers
 
-Este é um projeto de desenvolvimento web focado na exploração de layouts estruturados, aplicando conceitos fundamentais de
-CSS (como o Box Model) para criar uma experiência visual rica e organizada. 
-O site funciona como um catálogo/galeria de destinos turísticos e fotografias de paisagens deslumbrantes.
+Projeto de galeria digital para visualização e organização de wallpapers, focado no estudo e aplicação prática de HTML5, CSS3 e JavaScript.
 
 ---
 
-## Funcionalidades
+## 🛠️ Tecnologias
 
-*   **Página Principal:** Portal de entrada com navegação para as diferentes categorias de destinos.
-*   **Páginas Temáticas:** Conteúdo focado em categorias específicas, incluindo:
-    *   🌍 África
-    *   🐾 Animais
-    *   🏞️ Paisagens
-    *   🏖️ Praias
-    *   🌹 Destinos Românticos
-*   **Sistema de Cadastro:** Tela dedicada para utilizadores se registarem na plataforma.
-*   **Galeria de Imagens:** Integração de fotografias de alta qualidade (via Pexels) com estilização otimizada.
+| Tecnologia | Aplicação Principal |
+| :--- | :--- |
+| **HTML5** | Estruturação semântica do projeto |
+| **CSS3** | Layout (Flexbox, Box Model), temas, sombras e animações |
+| **JavaScript** | Manipulação do DOM, eventos, filtros, `localStorage` e lógica dinâmica |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ⚡ Funcionalidades
 
-*   **HTML5:** Estruturação semântica das páginas de conteúdo e formulários.
-*   **CSS3:** Estilização avançada, posicionamento, cores e aplicação de conceitos de *Box Model*.
-*   **JavaScript:** Scripts para comportamento e interatividade das páginas.
+* **Navegação & Categorias:** Conteúdo dividido entre África, Animais, Paisagens, Praias e Romântico.
+* **Pesquisa & Filtros:** Busca dinâmica por nome ou categoria.
+* **Wallpaper Aleatório:** Seleção randômica de imagens.
+* **Favoritos & Download:** Persistência de dados via `localStorage` e descarregamento de imagens.
+* **Modal Ampliado:** Visualização da imagem em tamanho original.
+* **Cadastro:** Área dedicada ao registo de utilizadores.
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-A organização dos ficheiros segue a seguinte estrutura na raiz:
-
 ```text
+WALLPAPER_ZONE/
 ├── CSS/
-│   ├── indexStyle.css         # Estilização principal do projeto
-│   └── img/                   # Banco de imagens organizado por categorias
-│       
+│   ├── indexStyle.css
+│   └── img/
 ├── JS/
-│   └── script.js              # Lógica e interações em JavaScript
-├── index.html                 # Página de entrada do projeto
-├── cadastro.html              # Formulário de registo de utilizadores
-├── pagPrincipal.html          # Dashboard/Painel principal de navegação
-├── pagAfrica.html             # Conteúdo focado em destinos africanos
-├── pagAnimal.html             # Galeria focada em fauna e natureza
-├── pagPaisagens.html          # Exibição de cenários naturais
-├── pagPraia.html              # Galeria de praias e destinos tropicais
-└── pagRomantico.html          # Páginas com foco em viagens a dois
+│   └── script.js
+├── index.html
+├── cadastro.html
+├── pagPrincipal.html
+├── pagAfrica.html
+├── pagAnimal.html
+├── pagPaisagens.html
+├── pagPraia.html
+├── pagRomantico.html
+└── sobredev.html
