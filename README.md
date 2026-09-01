@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 # WALLPAPER_ZONE — Galeria de Wallpapers
 
 Projeto de galeria digital para visualização e organização de wallpapers, focado no estudo e aplicação prática de HTML5, CSS3 e JavaScript.
+=======
+# 🏙️ wallpapers - Galeria Personalizada
+
+Este é um projeto de desenvolvimento web focado na exploração de layouts estruturados, aplicando conceitos fundamentais de
+CSS (como o flex-box) para criar uma experiência visual rica e organizada. 
+O site funciona como um catálogo/galeria de destinos turísticos e fotografias de paisagens deslumbrantes.
+>>>>>>> a820859110a9db694d93724da679b6eba2bf6bf5
 
 ---
 
