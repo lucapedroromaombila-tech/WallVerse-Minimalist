@@ -1,15 +1,3 @@
-:root {
-    --bg-body: #0a0a0c;
-    --bg-card: #141417;
-    --text-main: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --accent-neon: #00f2fe;
-    --accent-gold: #ffcc00;
-    --success: #2ecc71;
-    --danger: #e74c3c;
-    --font-family: 'Inter', sans-serif;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,9 +5,9 @@
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--bg-body);
-    color: var(--text-main);
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #0a0a0c;
+    color: #e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
     display: flex;
@@ -27,20 +15,10 @@ body {
     min-height: 100vh;
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-.buttonIn:focus-visible,
-.button:focus-visible {
-    outline: 3px solid var(--accent-gold);
-    outline-offset: 3px;
-}
-
 #header-site {
     width: 100%;
-    background: rgba(20, 20, 23, 0.85);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    background-color: rgba(20, 20, 23, 0.95);
+    box-shadow: 0px 4px 20px #000000;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -48,7 +26,7 @@ input:focus-visible,
 
 #conteudo01 {
     position: relative;
-    color: var(--text-main);
+    color: #e0e0e0;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -76,7 +54,7 @@ h1 {
     width: 55px;
     height: 55px;
     padding: 3px;
-    border: 2px solid var(--accent-neon);
+    border: 2px solid #00f2fe;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
     object-fit: cover;
@@ -84,12 +62,13 @@ h1 {
 
 #menu-navegacao {
     width: 100%;
-    background: rgba(10, 10, 12, 0.95);
-    border-bottom: 2px solid var(--accent-neon);
+    background-color: rgba(10, 10, 12, 0.95);
+    border-bottom: 2px solid #00f2fe;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9),
                 0 10px 15px rgba(0, 127, 231, 0.95),
                 0 15px 20px rgba(42, 247, 1, 0.85);
 }
+
 ul {
     list-style: none;
     display: flex;
@@ -108,27 +87,23 @@ li {
 }
 
 .buttonIn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     text-align: center;
     font-size: 13px;
     font-weight: 600;
-    padding: 8px 18px;
+    padding: 10px 18px;
     min-width: 44px;
-    min-height: 44px;
     background-color: rgba(20, 20, 23, 0.9);
     border: 1px solid rgba(0, 242, 254, 0.3);
     border-radius: 6px;
     text-decoration: none; 
-    color: var(--accent-neon);
+    color: #00f2fe;
     transition: all 0.3s ease;
     white-space: nowrap;
 }
 
-.buttonIn:hover,
-.buttonIn:focus {
-    background-color: var(--accent-neon);
+.buttonIn:hover {
+    background-color: #00f2fe;
     color: #000000;
     box-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
     transform: translateY(-2px);
@@ -147,21 +122,19 @@ main {
     width: 100%;
     max-width: 800px;
     margin: 150px auto 50px auto; 
-    background-color: var(--bg-card);
+    background-color: #141417;
     padding: 40px 20px;
     border-radius: 15px;
     border: 2px solid rgba(3, 131, 222, 0.3);
     box-shadow: 0 0 20px rgba(0, 127, 231, 0.2);
     font-family: Arial, Helvetica, sans-serif;
-    text-transform: none;
-    text-indent: 0;
     text-align: center;
 }
 
 #conteudo02 h2 {
     font-family: Georgia, serif;
     font-size: 28px;
-    color: var(--accent-neon);
+    color: #00f2fe;
     margin-bottom: 25px;
     text-transform: uppercase;
     cursor: pointer;
@@ -169,12 +142,11 @@ main {
     display: inline-block;
 }
 
-#conteudo02 h2:hover,
-#conteudo02 h2:focus {
+#conteudo02 h2:hover {
     color: #ffffff;
-    text-shadow: 0 0 8px var(--accent-neon), 
+    text-shadow: 0 0 8px #00f2fe, 
                 0 0 15px rgba(0, 127, 231, 0.945), 
-                0 0 25px var(--accent-neon);
+                0 0 25px #00f2fe;
     transform: scale(1.1) translateY(-2px);
 }
 
@@ -186,18 +158,18 @@ main {
 }
 
 #conteudo02 p span {
-    color: var(--accent-neon);
+    color: #00f2fe;
     font-weight: bold;
 }
 
 p > span:hover {
     background-color: #000000;
     text-transform: capitalize;
-    color: var(--accent-neon);
+    color: #00f2fe;
 }
 
 a {
-    color: var(--accent-neon);
+    color: #00f2fe;
 }
 
 .botoes-boas-vindas {
@@ -209,12 +181,10 @@ a {
 }
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     text-align: center;
+    line-height: 28px;
     min-width: 160px; 
-    min-height: 44px;
     padding: 8px 15px;
     background-color: rgba(2, 32, 179, 0.913);
     color: #ffffff;
@@ -226,8 +196,7 @@ a {
     font-size: 13px;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
     background-color: rgba(3, 131, 222, 0.954);
     box-shadow: 0 0 15px rgba(3, 131, 222, 0.7);
     transform: translateY(-2px);
@@ -267,7 +236,7 @@ a {
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
-    color: var(--accent-neon);
+    color: #00f2fe;
     margin-bottom: 30px;
     text-transform: uppercase;
     cursor: pointer;
@@ -278,12 +247,11 @@ a {
     margin-right: auto;
 }
 
-.fotos h2:hover,
-.fotos h2:focus {
+.fotos h2:hover {
     color: #ffffff;
-    text-shadow: 0 0 8px var(--accent-neon), 
+    text-shadow: 0 0 8px #00f2fe, 
                 0 0 15px rgba(0, 127, 231, 0.945), 
-                0 0 25px var(--accent-neon);
+                0 0 25px #00f2fe;
     transform: scale(1.1) translateY(-2px);
 }
 
@@ -314,8 +282,7 @@ a {
     display: block;
 }
 
-.foto:hover img,
-.foto:focus-within img {
+.foto:hover img {
     transform: scale(1.08);
     cursor: pointer;
 }
@@ -350,7 +317,6 @@ input[type="email"], input[type="password"] {
     padding: 40px 20px;
     margin-top: auto;
     border-top: 2px solid rgba(3, 131, 222, 0.5);
-    text-indent: 0;
 }
 
 .rodape-conteudo {
@@ -371,10 +337,9 @@ input[type="email"], input[type="password"] {
 .rodape-bloco h3 {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: var(--accent-neon);
+    color: #00f2fe;
     text-transform: uppercase;
     margin-bottom: 15px;
-    text-indent: 0;
     text-align: left;
 }
 
@@ -383,8 +348,6 @@ input[type="email"], input[type="password"] {
     font-size: 14px;
     color: #a0a0a0;
     line-height: 22px;
-    text-transform: none;
-    text-indent: 0;
     text-align: left;
 }
 
@@ -398,17 +361,15 @@ input[type="email"], input[type="password"] {
     font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color: var(--accent-neon);
+    color: #00f2fe;
     text-decoration: none;
     text-transform: capitalize;
-    text-indent: 0;
     text-align: left;
     transition: color 0.2s ease-in-out;
     padding: 4px 0;
 }
 
-.rodape-redes a:hover,
-.rodape-redes a:focus {
+.rodape-redes a:hover {
     color: #ffffff;
 }
 
@@ -425,30 +386,27 @@ input[type="email"], input[type="password"] {
     font-size: 13px;
     color: #ffffff;
     margin: 5px 0;
-    text-transform: none;
-    text-indent: 0;
     text-align: center;
 }
 
 .rodape-base p span {
-    color: var(--accent-neon);
+    color: #00f2fe;
     font-weight: bold;
 }
 
 .nome-brilhante {
-    color: var(--accent-neon);
+    color: #00f2fe;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     display: inline-block;
 }
 
-.nome-brilhante:hover,
-.nome-brilhante:focus {
+.nome-brilhante:hover {
     color: #ffffff;
-    text-shadow: 0 0 8px var(--accent-neon), 
+    text-shadow: 0 0 8px #00f2fe, 
                 0 0 15px rgba(0, 127, 231, 0.945), 
-                0 0 25px var(--accent-neon);
+                0 0 25px #00f2fe;
     transform: scale(1.1) translateY(-2px);
 }
 

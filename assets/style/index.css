@@ -1,15 +1,3 @@
-:root {
-    --bg-body: #0a0a0c;
-    --bg-card: #141417;
-    --text-main: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --accent-neon: #00f2fe; 
-    --accent-gold: #ffcc00; 
-    --success: #2ecc71;
-    --danger: #e74c3c;
-    --font-family: 'Inter', sans-serif;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,20 +5,21 @@
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--bg-body);
-    color: var(--text-main);
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #0a0a0c;
+    color: #e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 img {
     width: 55px;
     height: 55px;
     padding: 3px;
-    border: 2px solid var(--accent-neon);
+    border: 2px solid #00f2fe;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
     object-fit: cover;
@@ -44,16 +33,14 @@ img {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: opacity 0.3s ease;
 }
 
 #termos-modal {
-    background-color: var(--bg-card);
+    background-color: #141417;
     border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 40px;
     border-radius: 12px;
@@ -61,28 +48,22 @@ img {
     width: 90%;
     text-align: center;
     box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-    transform: translateY(0);
-    animation: modalEntrada 0.4s ease-out;
-}
-
-@keyframes modalEntrada {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
 }
 
 #termos-modal h3 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: var(--accent-gold);
+    color: #ffcc00;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 #termos-modal p {
     font-size: 15px;
-    color: var(--text-muted);
+    color: #a0a0a0;
     margin-bottom: 30px;
-    font-weight: 300;
+    line-height: 22px;
 }
 
 .botoes-modal {
@@ -98,9 +79,9 @@ img {
     border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
-    font-weight: 600;
-    transition: transform 0.1s ease, box-shadow 0.2s ease;
-    font-family: var(--font-family);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: all 0.2s ease;
 }
 
 .btn-modal:active {
@@ -108,24 +89,25 @@ img {
 }
 
 .btn-aceitar {
-    background-color: var(--success);
-    color: white;
+    background-color: #2ecc71;
+    color: #ffffff;
 }
 
 .btn-aceitar:hover {
     box-shadow: 0 0 15px rgba(46, 204, 113, 0.4);
+    background-color: #27ae60;
 }
 
 .btn-recusar {
     background-color: transparent;
-    color: var(--text-muted);
+    color: #a0a0a0;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-recusar:hover {
     background-color: rgba(231, 76, 60, 0.1);
-    color: var(--danger);
-    border-color: var(--danger);
+    color: #e74c3c;
+    border-color: #e74c3c;
 }
 
 /* --- Header e Logo --- */
@@ -134,11 +116,11 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     display: flex;
     justify-content: center;
-    background-color: rgba(10, 10, 12, 0.8);
+    background-color: rgba(10, 10, 12, 0.95);
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -155,20 +137,20 @@ header {
 
 .logo h1 {
     font-size: 24px;
-    font-weight: 700;
-    color: var(--text-main);
+    font-weight: bold;
+    color: #e0e0e0;
     letter-spacing: -1px;
 }
 
 .logo h1 span {
-    color: var(--accent-neon);
-    font-weight: 300;
+    color: #00f2fe;
+    font-weight: normal;
 }
 
 /* --- Menu de Navegação --- */
 #menu-navegacao {
     width: 100%;
-    background: rgba(10, 10, 12, 0.95);
+    background-color: rgba(10, 10, 12, 0.95);
     border-bottom: 1px solid rgba(0, 242, 254, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     padding: 10px 0;
@@ -185,18 +167,18 @@ header {
 }
 
 #menu-navegacao a {
-    color: var(--text-muted);
+    color: #a0a0a0;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    font-weight: bold;
     padding: 8px 12px;
     border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 #menu-navegacao a:hover,
 #menu-navegacao a.active {
-    color: var(--accent-neon);
+    color: #00f2fe;
     background-color: rgba(0, 242, 254, 0.05);
     text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
 }
@@ -211,7 +193,7 @@ main {
 }
 
 #container_manutencao {
-    background-color: var(--bg-card);
+    background-color: #141417;
     border: 1px solid rgba(255, 255, 255, 0.03);
     padding: 50px;
     border-radius: 16px;
@@ -223,45 +205,48 @@ main {
 
 #container_manutencao h2 {
     font-size: 32px;
-    font-weight: 800;
-    color: var(--accent-neon);
+    font-weight: bold;
+    color: #00f2fe;
     margin-bottom: 30px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-family: Arial, sans-serif;
 }
 
 #container_manutencao p {
     font-size: 16px;
-    color: var(--text-muted);
+    color: #a0a0a0;
     margin-bottom: 20px;
-    font-weight: 300;
+    line-height: 24px;
 }
 
 #container_manutencao p strong {
-    font-weight: 600;
-    color: var(--text-main);
+    font-weight: bold;
+    color: #e0e0e0;
 }
 
 /* Nome Brilhante com Animação */
 .nome-brilhante {
-    color: var(--accent-neon);
-    font-weight: 600;
+    color: #00f2fe;
+    font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 242, 254, 0.5);
-    animation: pulsarBrilho 2s infinite;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-@keyframes pulsarBrilho {
-    0%, 100% { text-shadow: 0 0 5px rgba(0, 242, 254, 0.5); }
-    50% { text-shadow: 0 0 15px rgba(0, 242, 254, 1); }
+.nome-brilhante:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px #00f2fe, 0 0 20px #00f2fe;
 }
 
 #aviso {
     background-color: rgba(255, 204, 0, 0.05);
-    border-left: 3px solid var(--accent-gold);
+    border-left: 3px solid #ffcc00;
     padding: 15px;
-    color: var(--accent-gold) !important;
+    color: #ffcc00 !important;
     border-radius: 4px;
     font-style: italic;
+    text-align: left;
 }
 
 /* Botão de Login */
@@ -272,11 +257,11 @@ main {
 .btn-principal {
     display: inline-block;
     padding: 15px 35px;
-    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-    color: #000;
+    background-color: #00f2fe;
+    color: #000000;
     text-decoration: none;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -285,6 +270,7 @@ main {
 }
 
 .btn-principal:hover {
+    background-color: #4facfe;
     box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
     transform: translateY(-2px);
 }
@@ -293,9 +279,10 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    color: #444;
+    color: #444444;
     font-size: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.02);
+    margin-top: auto;
 }
 
 /* --- Media Queries (Responsividade) --- */

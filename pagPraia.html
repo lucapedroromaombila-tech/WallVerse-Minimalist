@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Mantido o link para o CSS original -->
-    <link rel="stylesheet" href="CSS/indexStyle.css">
     <title>Wallpaper Zone - Por Do Sol</title>
+    <link rel="stylesheet" href="assets/style/indexStyle.css">
 </head>
 <body>
     
-    <!-- ESTRUTURA MODERNA: Substituído div#header-container por <header> -->
-    <header id="header-container">
-        <!-- Mantidos IDs e Classes originais internos -->
+    <header id="header-site">
         <div id="conteudo01">
-            <img src="CSS/img/avatar.png" alt="Avatar do Usuário">
+            <img src="assets/img/avatar.png" alt="Avatar do Usuário">
             <h1 class="nome-brilhante">WALLPAPER_ZONE</h1>
         </div>
     </header>
 
-    <!-- ESTRUTURA MODERNA: Substituído div vazia por <nav> semântico -->
-    <!-- Mantive os links e a classe buttonIn originais -->
     <nav id="menu-navegacao">
         <ul>
             <li><a href="pagPrincipal.html" class="buttonIn">Inicio</a></li>
@@ -27,77 +22,65 @@
             <li><a href="pagPaisagens.html" class="buttonIn">Paisagens</a></li>
             <li><a href="pagRomantico.html" class="buttonIn">Love</a></li>
             <li><a href="pagAfrica.html" class="buttonIn">Africa</a></li>
-            <!-- O link Contacto agora aponta para o ID no rodapé -->
-            <li><a href="#contacto" class="buttonIn">Contacto</a></li>
+            <li><a href="sobredev.html" class="buttonIn">Sobre</a></li>
         </ul>
     </nav>
     
-    <!-- Removida a <div id="nav-container"></div> vazia, pois a estrutura acima já é a navegação -->
-    
-    <!-- ESTRUTURA MODERNA: Envolvido o conteúdo principal com a tag <main> -->
     <main>
-        <!-- ESTRUTURA MODERNA: Substituído div.fotos por <section> -->
         <section class="fotos">
             <h2>Por do Sol</h2>
-            <!-- Mantida a div.img original para o grid de fotos -->
             <div class="img">
                 
-                <!-- ESTRUTURA MODERNA: Substituído div.foto por <figure> (ideal para imagens com legenda) -->
-                <!-- Mantida a classe original foto no figure -->
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-anh-khoa-2157475551-34752112.jpg" alt="Wallpaper 1">
-                    <!-- ESTRUTURA MODERNA: div.legenda substituída por <figcaption> -->
-                    <!-- Mantida a classe original legenda -->
+                    <img src="assets/img/imgPraia/pexels-anh-khoa-2157475551-34752112.jpg" alt="Oceano Profundo">
                     <figcaption class="legenda">Oceano Profundo</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-aysin-17841844.jpg" alt="Wallpaper 2">
+                    <img src="assets/img/imgPraia/pexels-aysin-17841844.jpg" alt="Montanhas da Primavera">
                     <figcaption class="legenda">Montanhas da Primavera</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-janez-temlin-2159304147-36678217.jpg" alt="Wallpaper 3">
+                    <img src="assets/img/imgPraia/pexels-janez-temlin-2159304147-36678217.jpg" alt="Neon Cyberpunk">
                     <figcaption class="legenda">Neon Cyberpunk</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-tomris-656234478-29527793.jpg" alt="Wallpaper 4">
+                    <img src="assets/img/imgPraia/pexels-tomris-656234478-29527793.jpg" alt="Abstrato Geométrico">
                     <figcaption class="legenda">Abstrato Geométrico</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-joaquim-pacheco-1570917592-37358197.jpg" alt="Wallpaper 5">
+                    <img src="assets/img/imgPraia/pexels-joaquim-pacheco-1570917592-37358197.jpg" alt="Cenário Urbano">
                     <figcaption class="legenda">Cenário Urbano</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-juan-garcia-84744800-9280725.jpg" alt="Wallpaper 6">
+                    <img src="assets/img/imgPraia/pexels-juan-garcia-84744800-9280725.jpg" alt="Minimalista Vista">
                     <figcaption class="legenda">Minimalista Vista</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-wallace-viegas-558332283-33608274.jpg" alt="Wallpaper 7">
+                    <img src="assets/img/imgPraia/pexels-wallace-viegas-558332283-33608274.jpg" alt="Pôr do Sol Gold">
                     <figcaption class="legenda">Pôr do Sol Gold</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-lucaspezeta-7367474.jpg" alt="Wallpaper 8">
+                    <img src="assets/img/imgPraia/pexels-lucaspezeta-7367474.jpg" alt="Espaço Galáxia">
                     <figcaption class="legenda">Espaço Galáxia</figcaption>
                 </figure>
                 
                 <figure class="foto">
-                    <img src="CSS/img/imgPraia/pexels-nandakumarrajesh1312007-37523375.jpg" alt="Wallpaper 9">
+                    <img src="assets/img/imgPraia/pexels-nandakumarrajesh1312007-37523375.jpg" alt="Floresta Mística">
                     <figcaption class="legenda">Floresta Mística</figcaption>
                 </figure>
 
-            </div> <!-- fim div.img -->
-        </section> <!-- fim section.fotos -->
+            </div>
+        </section>
     </main>
 
-    <!-- ESTRUTURA MODERNA: Substituído div#rodape-container por <footer> -->
     <footer id="rodape-container">
-        <!-- Mantidos IDs e Classes originais internos -->
         <div class="rodape-conteudo">
             <div class="rodape-bloco">
                 <h3>Redes Sociais</h3>
@@ -105,7 +88,7 @@
                     <a href="https://wa.me/244952850762" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://github.com/lucapedroromaombila-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
             <div class="rodape-bloco">
@@ -113,10 +96,9 @@
                 <p>A sua galeria digital de papéis de parede em alta resolução.</p>
             </div>
         </div>
-        <!-- Adicionado o ID contacto aqui para a âncora do menu funcionar -->
-        <div class="rodape-base" id="contacto">
+        <div class="rodape-base">
             <p>© 2026 WALLPAPER_ZONE. Todos os direitos reservados.</p>
-            <p>Desenvolvido por: <span class="nome-brilhante">LUC4$_DURAN</span></p>
+            <p>Desenvolvido por: <a href="https://github.com/lucapedroromaombila-tech" target="_blank" rel="noopener noreferrer" class="nome-brilhante">LUC4$_DURAN</a></p>
         </div>
     </footer>
 </body>
